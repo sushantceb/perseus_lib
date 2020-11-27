@@ -1,0 +1,6 @@
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE application/javascript text/css
+</IfModule>
+<filesMatch ".(css|js|less)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
